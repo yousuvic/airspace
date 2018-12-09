@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="media-container-row">
+    <div class="col-md-12">
+      <div class="col-md-12">
+        <div class="place-map">
+          <div id='map'></div>
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+        <table class="table table-dark" id="datable">
+          <thead>
+          <tr>
+            <th scope="col">Coordinates</th>
+            <th scope="col">Address</th>
+            <th scope="col">Distance to the White House</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% address.each do |value| %>
+            <tr>
+              <th scope="row" class="class-coordinates"><%= value[:coordinates] %></th>
+              <td class="class-street"><%= value[:street_address] %></td>
+              <td class="class-distance"><%= value[:distance_wh]%>Miles</td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

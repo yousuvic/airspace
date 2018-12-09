@@ -1,0 +1,41 @@
+/* custom CSS goes here */
+
+
+.p25 {
+    padding: 25px;
+}
+
+.media-container-row .col-md-12{
+    height: 100%;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.table {
+    border-radius: 5px;
+    width: 100%;
+    margin: 40px auto;
+    float: none;
+}
+
+.place-map {
+    height: 500px;
+    width: 100%;
+    float: none;
+    display: block;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 0px;
+    width: 100%;
+}
+
+body {
+    background: black;
+}
+
+#canvas-wrap { position:relative;  }
+#canvas-wrap canvas { position:absolute; top:0; left:0; z-index:0 }
